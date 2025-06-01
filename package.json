@@ -1,6 +1,6 @@
 {
   "name": "cls2mock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert cls csv to mockData.zip for API mock",
   "main": "index.js",
   "bin": {
