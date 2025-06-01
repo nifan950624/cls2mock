@@ -1,0 +1,15 @@
+{
+  "name": "cls2mock",
+  "version": "1.0.1",
+  "description": "Convert cls csv to mockData.zip for API mock",
+  "main": "index.js",
+  "bin": {
+    "cls2mock": "index.js"
+  },
+  "author": "nifan950624",
+  "license": "MIT",
+  "dependencies":{
+    "csvtojson": "^2.0.10",
+    "yazl": "^2.5.1"
+  }
+}
