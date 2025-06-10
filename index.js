@@ -43,12 +43,11 @@ function getNextZipName(base = 'mockData.zip') {
 // 主流程
 (async () => {
   const rawData = await csv().fromFile(csvFile);
-
   const transformed = rawData.map((item) => {
     let data;
     try {
-      data = JSON.parse(item.response_body);
-    } catch {
+      data = JSON.parse(item.response_body.replace(/\\"/g, '"'));
+    } catch(e) {
       data = {};
     }
     return {
